@@ -1,8 +1,6 @@
-package com.example.geometry.GeometryUtils;
+package com.example.geometry.GeometryUtils.src.main.java.com.example.geometry;
 
 import com.example.geometry.Circle;
-import com.example.geometry.Rectangle;
-import com.example.geometry.Triangle;
 
 public class GeometryUtils {
 
@@ -30,5 +28,9 @@ public class GeometryUtils {
         } else {
             return "Площади фигур равны";
         }
+    }
+
+    public static double millimetersToCentimeters(double millimeters) {
+        return millimeters / 10;
     }
 }
