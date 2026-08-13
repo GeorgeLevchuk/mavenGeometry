@@ -1,6 +1,7 @@
 package com.example.app;
 
 import com.example.geometry.Circle;
+import com.example.geometry.GeometryUtils.GeometryUtils;
 import com.example.geometry.Rectangle;
 import com.example.geometry.Shape;
 import com.example.geometry.Triangle;
@@ -22,6 +23,26 @@ public class Main {
         System.out.println("Площадь: " + circle1.area());
         System.out.println("Периметр: " + circle1.perimeter());
         System.out.println("Диаметр: " + circle1.getDiameter());
+
+        //проверка 4 задания
+        Circle circle2 = new Circle(5);
+        Circle circle3 = new Circle(10);
+
+        double meters = GeometryUtils.centimetersToMeters(250);
+
+        System.out.println("250 см = " + meters + " м");
+
+        System.out.println(
+                GeometryUtils.compareAreas(
+                        circle1.area(),
+                        circle2.area()
+                )
+        );
+
+        System.out.println(
+                "Площади кругов равны: " +
+                        GeometryUtils.haveEqualArea(circle1, circle2)
+        );
     }
 
     private static void printInfo(String name, Shape shape) {
