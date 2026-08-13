@@ -15,6 +15,13 @@ public class Main {
         printInfo("Круг", circle);
         printInfo("Прямоугольник", rectangle);
         printInfo("Треугольник", triangle);
+
+        //проверка 3 задания
+        Circle circle1 = new Circle(5);
+
+        System.out.println("Площадь: " + circle1.area());
+        System.out.println("Периметр: " + circle1.perimeter());
+        System.out.println("Диаметр: " + circle1.getDiameter());
     }
 
     private static void printInfo(String name, Shape shape) {
