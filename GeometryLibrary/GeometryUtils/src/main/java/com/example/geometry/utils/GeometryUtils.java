@@ -1,4 +1,4 @@
-package com.example.geometry.GeometryUtils.src.main.java.com.example.geometry;
+package com.example.geometry.utils;
 
 import com.example.geometry.Circle;
 
